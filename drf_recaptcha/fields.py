@@ -12,7 +12,7 @@ class ReCaptchaV2Field(CharField):
 
         self.write_only = True
 
-        validator = ReCaptchaV2Validator(secret_key=settings.DRF_RECAPTCHA_SECRET_KEY)
+        validator = ReCaptchaV2Validator(secret_key=settings.DRF_RECAPTCHA_V2_SECRET_KEY)
         self.validators.append(validator)
 
 
@@ -79,7 +79,7 @@ class ReCaptchaV3Field(CharField):
         self.__validator = ReCaptchaV3Validator(
             action=action,
             required_score=self.required_score,
-            secret_key=settings.DRF_RECAPTCHA_SECRET_KEY,
+            secret_key=settings.DRF_RECAPTCHA_V3_SECRET_KEY,
         )
         self.validators.append(self.__validator)
 
