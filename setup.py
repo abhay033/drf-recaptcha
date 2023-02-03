@@ -6,15 +6,15 @@ def read(f):
 
 
 setup(
-    name="drf-recaptcha",
-    version="2.2.2",
+    name="drf-recaptcha_new",
+    version="2.2.3",
     description="Django rest framework recaptcha field serializer.",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="Lev Lybin",
-    author_email="lev.lybin@gmail.com",
+    author_email="abhaybhati987@gmail.com",
     license="MIT",
-    url="https://github.com/llybin/drf-recaptcha",
+    url="https://github.com/abhay033/drf-recaptcha/",
     packages=find_packages(exclude=["tests*"]),
     install_requires=[
         "django>=3.2,<4.2",
